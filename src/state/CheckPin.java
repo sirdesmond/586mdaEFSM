@@ -49,7 +49,8 @@ public class CheckPin extends State {
     @Override
     public void correctPinBelowMin() {
         System.out.println("Correct Pin but balance below minimum");
-        factory.getDisplayBalance().displayBalance();
+        context.setCurrentState(context.getOverdrawn());
+        factory.getDisplayMenu().displayMenu();
     }
 
     @Override
@@ -60,15 +61,14 @@ public class CheckPin extends State {
 
     @Override
     public void deposit() {
-        System.out.println("Enter Pin!");
         factory.getPromptForPin().promptForPin();
     }
 
     @Override
-    public void belowMinBalance() {}
+    public void belowMinBalance() {factory.getPromptForPin().promptForPin();}
 
     @Override
-    public void aboveMinBalance() {}
+    public void aboveMinBalance() {factory.getPromptForPin().promptForPin();}
 
     @Override
     public void logout() {
@@ -78,55 +78,35 @@ public class CheckPin extends State {
     }
 
     @Override
-    public void balance() {
-        System.out.println("Enter Pin!");
-        factory.getPromptForPin().promptForPin();
-    }
+    public void balance() {factory.getPromptForPin().promptForPin();}
 
     @Override
-    public void withdraw() {
-        System.out.println("Enter Pin!");
-        factory.getPromptForPin().promptForPin();
-    }
+    public void withdraw() {factory.getPromptForPin().promptForPin();}
 
     @Override
-    public void withdrawBelowMinBalance() {}
+    public void withdrawBelowMinBalance() {factory.getPromptForPin().promptForPin();}
 
     @Override
-    public void noFunds() {}
+    public void noFunds() {factory.getPromptForPin().promptForPin();}
 
     @Override
-    public void lock() {
-
-    }
+    public void lock() {factory.getPromptForPin().promptForPin();}
 
     @Override
-    public void incorrectLock() {
-
-    }
+    public void incorrectLock() {factory.getPromptForPin().promptForPin();}
 
     @Override
-    public void unlock() {
-
-    }
+    public void unlock() {factory.getPromptForPin().promptForPin();}
 
     @Override
-    public void incorrectUnlock() {
-
-    }
+    public void incorrectUnlock() {factory.getPromptForPin().promptForPin();}
 
     @Override
-    public void suspend() {
-
-    }
+    public void suspend() {factory.getPromptForPin().promptForPin();}
 
     @Override
-    public void activate() {
-
-    }
+    public void activate() {factory.getPromptForPin().promptForPin();}
 
     @Override
-    public void close() {
-
-    }
+    public void close() {factory.getPromptForPin().promptForPin();}
 }

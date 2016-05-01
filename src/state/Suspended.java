@@ -16,49 +16,31 @@ public class Suspended extends State{
 
 
     @Override
-    public void open() {
-
-    }
+    public void open() { System.out.println("enter 8 to activate");}
 
     @Override
-    public void login() {
-
-    }
+    public void login() {System.out.println("enter 8 to activate");}
 
     @Override
-    public void incorrectLogin() {
-
-    }
+    public void incorrectLogin() {System.out.println("enter 8 to activate");}
 
     @Override
-    public void incorrectPin(int max) {
-
-    }
+    public void incorrectPin(int max) {System.out.println("enter 8 to activate");}
 
     @Override
-    public void correctPinBelowMin() {
-
-    }
+    public void correctPinBelowMin() {System.out.println("enter 8 to activate");}
 
     @Override
-    public void correctPinAboveMin() {
-
-    }
+    public void correctPinAboveMin() {System.out.println("enter 8 to activate");}
 
     @Override
-    public void deposit() {
-
-    }
+    public void deposit() {System.out.println("enter 8 to activate");}
 
     @Override
-    public void belowMinBalance() {
-
-    }
+    public void belowMinBalance() {System.out.println("enter 8 to activate");}
 
     @Override
-    public void aboveMinBalance() {
-
-    }
+    public void aboveMinBalance() {System.out.println("enter 8 to activate");}
 
     @Override
     public void logout() {
@@ -70,51 +52,35 @@ public class Suspended extends State{
     @Override
     public void balance() {
         factory.getDisplayBalance().displayBalance();
+        System.out.println("enter 8 to activate");
     }
 
     @Override
-    public void withdraw() {
-
-    }
+    public void withdraw() {System.out.println("enter 8 to activate");}
 
     @Override
-    public void withdrawBelowMinBalance() {
-
-    }
+    public void withdrawBelowMinBalance() {System.out.println("enter 8 to activate");}
 
     @Override
-    public void noFunds() {
-
-    }
+    public void noFunds() {System.out.println("enter 8 to activate");}
 
     @Override
-    public void lock() {
-
-    }
+    public void lock() {System.out.println("enter 8 to activate");}
 
     @Override
-    public void incorrectLock() {
-
-    }
+    public void incorrectLock() {System.out.println("enter 8 to activate");}
 
     @Override
-    public void unlock() {
-
-    }
+    public void unlock() {System.out.println("enter 8 to activate");}
 
     @Override
-    public void incorrectUnlock() {
-
-    }
+    public void incorrectUnlock() {System.out.println("enter 8 to activate");}
 
     @Override
-    public void suspend() {
-
-    }
+    public void suspend() {System.out.println("enter 8 to activate");}
 
     @Override
     public void activate() {
-
         context.setCurrentState(context.getReady());
         System.out.println("Account activated!");
     }

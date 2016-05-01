@@ -20,18 +20,16 @@ public class Ready extends State{
 
     @Override
     public void open() {
-
+        System.out.println("Already opened..enter 2,3 or 4");
     }
 
     @Override
     public void login() {
-
+        System.out.println("Already logged in...enter 2,3 or 4");
     }
 
     @Override
-    public void incorrectLogin() {
-
-    }
+    public void incorrectLogin() {System.out.println("enter 2,3 or 4");}
 
     @Override
     public void incorrectPin(int max) {
@@ -41,18 +39,15 @@ public class Ready extends State{
     }
 
     @Override
-    public void correctPinBelowMin() {
-
-    }
+    public void correctPinBelowMin() {System.out.println("enter 2,3 or 4");}
 
     @Override
-    public void correctPinAboveMin() {
-
-    }
+    public void correctPinAboveMin() {System.out.println("enter 2,3 or 4");}
 
     @Override
     public void deposit() {
         factory.getMakeDeposit().makeDeposit();
+        System.out.println("enter 2,3 or 4");
     }
 
     @Override
@@ -75,11 +70,13 @@ public class Ready extends State{
     @Override
     public void balance() {
         factory.getDisplayBalance().displayBalance();
+        System.out.println("enter 2,3 or 4");
     }
 
     @Override
     public void withdraw() {
         factory.getMakeWithdrawal().makeWithdrawal();
+        System.out.println("enter 2,3 or 4");
     }
 
     @Override
@@ -91,6 +88,7 @@ public class Ready extends State{
     @Override
     public void noFunds() {
         factory.getNoFundsMsg().noFundsMsg();
+        System.out.println("enter 2 or 4");
     }
 
     @Override
@@ -101,17 +99,14 @@ public class Ready extends State{
     @Override
     public void incorrectLock() {
        factory.getIncorrectLockMsg().incorrectLockMsg();
+        System.out.println("view menu to lock");
     }
 
     @Override
-    public void unlock() {
-
-    }
+    public void unlock() { System.out.println("enter 2 or 4");}
 
     @Override
-    public void incorrectUnlock() {
-
-    }
+    public void incorrectUnlock() { System.out.println("enter 2 or 4");}
 
     @Override
     public void suspend() {
@@ -120,12 +115,8 @@ public class Ready extends State{
     }
 
     @Override
-    public void activate() {
-
-    }
+    public void activate() { System.out.println("enter 2 or 4");}
 
     @Override
-    public void close() {
-
-    }
+    public void close() { System.out.println("enter 2 or 4");}
 }

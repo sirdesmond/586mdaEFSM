@@ -16,43 +16,32 @@ public class Overdrawn extends State{
 
 
     @Override
-    public void open() {
-
-    }
+    public void open() {System.out.println("Please enter 2 to deposit or 4 to view balance");}
 
     @Override
-    public void login() {
-
-    }
+    public void login() {System.out.println("Please enter 2 to deposit or 4 to view balance");}
 
     @Override
-    public void incorrectLogin() {
-
-    }
+    public void incorrectLogin() {System.out.println("Please enter 2 to deposit or 4 to view balance");}
 
     @Override
-    public void incorrectPin(int max) {
-
-    }
+    public void incorrectPin(int max) {System.out.println("Please enter 2 to deposit or 4 to view balance");}
 
     @Override
-    public void correctPinBelowMin() {
-
-    }
+    public void correctPinBelowMin() {System.out.println("Please enter 2 to deposit or 4 to view balance");}
 
     @Override
-    public void correctPinAboveMin() {
-
-    }
+    public void correctPinAboveMin() {System.out.println("Please enter 2 to deposit or 4 to view balance");}
 
     @Override
     public void deposit() {
         factory.getMakeDeposit().makeDeposit();
+        System.out.println("Please enter 2 to deposit or 4 to view balance");
     }
 
     @Override
     public void belowMinBalance() {
-        factory.getNoFundsMsg().noFundsMsg();
+        System.out.println("Please enter 2 to deposit or 4 to view balance");
     }
 
     @Override
@@ -86,7 +75,7 @@ public class Overdrawn extends State{
 
     @Override
     public void noFunds() {
-
+        System.out.println("Please enter 2 to deposit or 4 to view balance");
     }
 
     @Override
@@ -100,27 +89,17 @@ public class Overdrawn extends State{
     }
 
     @Override
-    public void unlock() {
-
-    }
+    public void unlock() {System.out.println("Please enter 2 to deposit or 4 to view balance");}
 
     @Override
-    public void incorrectUnlock() {
-
-    }
+    public void incorrectUnlock() {System.out.println("Please enter 2 to deposit or 4 to view balance");}
 
     @Override
-    public void suspend() {
-
-    }
+    public void suspend() {System.out.println("Please enter 2 to deposit or 4 to view balance");}
 
     @Override
-    public void activate() {
-
-    }
+    public void activate() {System.out.println("Please enter 2 to deposit or 4 to view balance");}
 
     @Override
-    public void close() {
-
-    }
+    public void close() {System.out.println("Please enter 2 to deposit or 4 to view balance");}
 }

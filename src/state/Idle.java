@@ -36,32 +36,32 @@ public class Idle extends State{
 
     @Override
     public void incorrectPin(int max) {
-
+        System.out.println("Please enter 0 to open account");
     }
 
     @Override
     public void correctPinBelowMin() {
-
+        System.out.println("Please enter 0 to open account");
     }
 
     @Override
     public void correctPinAboveMin() {
-
+        System.out.println("Please enter 0 to open account");
     }
 
     @Override
     public void deposit() {
-
+        System.out.println("Please enter 0 to open account");
     }
 
     @Override
     public void belowMinBalance() {
-
+        System.out.println("Please enter 0 to open account");
     }
 
     @Override
     public void aboveMinBalance() {
-
+        System.out.println("Please enter 0 to open account");
     }
 
     @Override
@@ -73,56 +73,56 @@ public class Idle extends State{
 
     @Override
     public void balance() {
-
+        System.out.println("Please enter 0 to open account");
     }
 
     @Override
     public void withdraw() {
-
+        System.out.println("Please enter 0 to open account");
     }
 
     @Override
     public void withdrawBelowMinBalance() {
-
+        System.out.println("Please enter 0 to open account");
     }
 
     @Override
     public void noFunds() {
-
+        System.out.println("Please enter 0 to open account");
     }
 
     @Override
     public void lock() {
-
+        System.out.println("Please enter 0 to open account");
     }
 
     @Override
     public void incorrectLock() {
-
+        System.out.println("Please enter 0 to open account");
     }
 
     @Override
     public void unlock() {
-
+        System.out.println("Please enter 0 to open account");
     }
 
     @Override
     public void incorrectUnlock() {
-
+        System.out.println("Please enter 0 to open account");
     }
 
     @Override
     public void suspend() {
-
+        System.out.println("Please enter 0 to open account");
     }
 
     @Override
     public void activate() {
-
+        System.out.println("Please enter 0 to open account");
     }
 
     @Override
     public void close() {
-
+        System.out.println("Please enter 0 to open account");
     }
 }

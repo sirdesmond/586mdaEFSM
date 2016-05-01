@@ -37,7 +37,6 @@ import state.AccountContext;
  */
 public class Account2AbsFactory extends AccountAbstractFactory{
 
-    //TODO: change 1 to 2
     public Account2AbsFactory() {
         dataStore = new DataStore2();
         displayBalance = new DisplayBalance_1(dataStore);

@@ -16,39 +16,25 @@ public class Locked extends State{
 
 
     @Override
-    public void open() {
-
-    }
+    public void open() {System.out.println("Please enter 8 to unlock");}
 
     @Override
-    public void login() {
-
-    }
+    public void login() {System.out.println("Please enter 8 to unlock");}
 
     @Override
-    public void incorrectLogin() {
-
-    }
+    public void incorrectLogin() {System.out.println("Please enter 8 to unlock");}
 
     @Override
-    public void incorrectPin(int max) {
-
-    }
+    public void incorrectPin(int max) {System.out.println("Please enter 8 to unlock");}
 
     @Override
-    public void correctPinBelowMin() {
-
-    }
+    public void correctPinBelowMin() {System.out.println("Please enter 8 to unlock");}
 
     @Override
-    public void correctPinAboveMin() {
-
-    }
+    public void correctPinAboveMin() {System.out.println("Please enter 8 to unlock");}
 
     @Override
-    public void deposit() {
-
-    }
+    public void deposit() {System.out.println("Please enter 8 to unlock");}
 
     @Override
     public void belowMinBalance() {
@@ -56,9 +42,7 @@ public class Locked extends State{
     }
 
     @Override
-    public void aboveMinBalance() {
-
-    }
+    public void aboveMinBalance() {System.out.println("Please enter 8 to unlock");}
 
     @Override
     public void logout() {
@@ -68,34 +52,22 @@ public class Locked extends State{
     }
 
     @Override
-    public void balance() {
-
-    }
+    public void balance() {System.out.println("Please enter 8 to unlock");}
 
     @Override
-    public void withdraw() {
-
-    }
+    public void withdraw() {System.out.println("Please enter 8 to unlock");}
 
     @Override
-    public void withdrawBelowMinBalance() {
-
-    }
+    public void withdrawBelowMinBalance() {System.out.println("Please enter 8 to unlock");}
 
     @Override
-    public void noFunds() {
-
-    }
+    public void noFunds() {System.out.println("Please enter 8 to unlock");}
 
     @Override
-    public void lock() {
-
-    }
+    public void lock() {System.out.println("Please enter 8 to unlock");}
 
     @Override
-    public void incorrectLock() {
-
-    }
+    public void incorrectLock() {System.out.println("Please enter 8 to unlock");}
 
     @Override
     public void unlock() {
@@ -108,17 +80,11 @@ public class Locked extends State{
     }
 
     @Override
-    public void suspend() {
-
-    }
+    public void suspend() {System.out.println("Please enter 8 to unlock");}
 
     @Override
-    public void activate() {
-
-    }
+    public void activate() {System.out.println("Please enter 8 to unlock");}
 
     @Override
-    public void close() {
-
-    }
+    public void close() {System.out.println("Please enter 8 to unlock");}
 }
