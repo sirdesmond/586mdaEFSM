@@ -1,7 +1,8 @@
 package state;
 
 /**
- * Created by kofikyei on 4/30/16.
+ * Created by APPIAH-KUBI DESMOND on 4/30/16.
+ * Abstract class for the various states
  */
 public abstract class State {
 

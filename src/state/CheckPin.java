@@ -3,7 +3,8 @@ package state;
 import factory.AccountAbstractFactory;
 
 /**
- * Created by kofikyei on 4/30/16.
+ * Created by APPIAH-KUBI DESMOND on 4/30/16.
+ * Operations for when the system is in a CheckPin State.
  */
 public class CheckPin extends State {
 
@@ -37,12 +38,13 @@ public class CheckPin extends State {
 
     @Override
     public void incorrectPin(int max) {
-        attempts++;
         if(attempts<max){
+            attempts++;
             factory.getIncorrectPinMsg().incorrectPinMsg();
+            System.out.println("Input 1 to enter Pin again");
         }else {
-            factory.getTooManyAttemptsMsg().tooManyAttemptsMsg();
             context.setCurrentState(context.getIdle());
+            factory.getTooManyAttemptsMsg().tooManyAttemptsMsg();
         }
     }
 

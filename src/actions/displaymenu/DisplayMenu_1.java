@@ -1,7 +1,8 @@
 package actions.displaymenu;
 
 /**
- * Created by kofikyei on 4/30/16.
+ * Created by APPIAH-KUBI DESMOND on 4/30/16.
+ * Concrete class for displaying menu for account 1
  */
 public class DisplayMenu_1 extends DisplayMenu{
 
@@ -18,6 +19,7 @@ public class DisplayMenu_1 extends DisplayMenu{
         System.out.println("\t 6. logout()");
         System.out.println("\t 7. lock(string x)");
         System.out.println("\t 8. unlock(string x)");
+        System.out.println("\t 9. Quit the demo program");
         System.out.println("**************************************************");
     }
 }

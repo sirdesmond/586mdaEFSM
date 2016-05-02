@@ -3,7 +3,8 @@ package mdaevents;
 import state.AccountContext;
 
 /**
- * Created by kofikyei on 4/30/16.
+ * Created by APPIAH-KUBI DESMOND on 4/30/16.
+ * Concrete Implementation for the IEvents
  */
 public class EventsImpl implements IEvents{
     AccountContext context;

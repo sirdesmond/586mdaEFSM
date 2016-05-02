@@ -6,7 +6,8 @@ import mdaevents.IEvents;
 
 
 /**
- * Created by kofikyei on 5/1/16.
+ * Created by APPIAH-KUBI DESMOND on 5/1/16.
+ * Concrete Implementation for Account1
  */
 public class Account1 extends Account{
 
@@ -38,59 +39,93 @@ public class Account1 extends Account{
     }
 
     public void pin(String pin){
-        if(pin.equals(dataStore.getPin())){
-            if(Integer.parseInt(dataStore.getBal()) > 500){
-                events.correctPinAboveMin();
-            }else events.correctPinBelowMin();
-        }else events.incorrectPin(3);
+        try {
+            dataStore.setTemp_pin(pin);
+            if(pin.equals(dataStore.getPin())){
+                if(Float.parseFloat(dataStore.getBal()) > 500){
+                    events.correctPinAboveMin();
+                }else events.correctPinBelowMin();
+            }else events.incorrectPin(3);
+        } catch (NullPointerException e) {
+        }
     }
 
     public void deposit(float amt){
         dataStore.setTemp_deposit_amt(amt);
         events.deposit();
-        if(Float.parseFloat(dataStore.getBal()) > 500){
-            events.aboveMinBalance();
+        try {
+            if(Float.parseFloat(dataStore.getBal()) > 500){
+                events.aboveMinBalance();
+            }
+            else events.belowMinBalance();
+        } catch (NumberFormatException e) {
         }
-        else events.belowMinBalance();
+        catch (NullPointerException e) {
+        }
     }
 
     public void withdraw(float amt){
         dataStore.setTemp_withdrawal_amt(amt);
         events.withdraw();
-        if(Float.parseFloat(dataStore.getBal()) > 500){
-            events.aboveMinBalance();
+        try {
+            if(Float.parseFloat(dataStore.getBal()) > 500){
+                events.aboveMinBalance();
+            }
+            else events.withdrawBelowMinBalance();
+        } catch (NumberFormatException e) {
         }
-        else events.withdrawBelowMinBalance();
+        catch (NullPointerException e) {
+        }
     }
 
     public void balance(){
-        events.balance();
+
+        try {
+            events.balance();
+        } catch (Exception e) {
+        }
     }
 
     public void login(String uid){
-        System.out.println("uid: "+dataStore.getId());
-        if(uid.equals(dataStore.getId())) events.login();
-        else events.incorrectLogin();
+        try {
+            dataStore.setTemp_id(uid);
+            if(uid.equals(dataStore.getId())) events.login();
+            else events.incorrectLogin();
+        } catch (Exception e) {
+            System.out.println("Please enter 0 to open account");
+        }
     }
 
-    public void logout(){
-        events.logout();
+    public void logout()
+    {
+        try {
+            events.logout();
+        } catch (Exception e) {
+        }
     }
 
     public void lock(String pin){
-        if(pin.equals(dataStore.getPin())) events.lock();
-        else events.incorrectLock();
+
+        try {
+            if(pin.equals(dataStore.getPin())) events.lock();
+            else events.incorrectLock();
+        } catch (Exception e) {
+        }
     }
 
+
     public void unlock(String pin){
-        if(pin.equals(dataStore.getPin())){
-            events.unlock();
-            if(Integer.parseInt(dataStore.getBal()) > 500){
-                events.aboveMinBalance();
+        try {
+            if(pin.equals(dataStore.getPin())){
+                events.unlock();
+                if(Float.parseFloat(dataStore.getBal()) > 500){
+                    events.aboveMinBalance();
+                }
+                else events.belowMinBalance();
+            }else{
+                events.incorrectUnlock();
             }
-            else events.belowMinBalance();
-        }else{
-            events.incorrectUnlock();
+        } catch (Exception e) {
         }
     }
 }

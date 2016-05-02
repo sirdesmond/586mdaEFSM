@@ -17,7 +17,8 @@ import datastore.DataStore;
 import mdaevents.IEvents;
 
 /**
- * Created by kofikyei on 4/30/16.
+ * Created by APPIAH-KUBI DESMOND on 4/30/16.
+ * Abstract factory for creating other concrete account factories.
  */
 public abstract class AccountAbstractFactory {
     protected DataStore dataStore;

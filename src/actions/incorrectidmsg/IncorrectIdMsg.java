@@ -4,7 +4,8 @@ package actions.incorrectidmsg;
 import datastore.DataStore;
 
 /**
- * Created by kofikyei on 4/30/16.
+ * Created by APPIAH-KUBI DESMOND on 4/30/16.
+ * Abstract class for throwing IncorrectIdMsg warning.
  */
 public abstract class IncorrectIdMsg {
     DataStore dataStore;

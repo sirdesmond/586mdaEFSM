@@ -3,7 +3,8 @@ package actions.penalty;
 import datastore.DataStore;
 
 /**
- * Created by kofikyei on 4/30/16.
+ * Created by APPIAH-KUBI DESMOND on 4/30/16.
+ * concrete class for assigning account 1 penalty.
  */
 public class Penalty_1 extends Penalty{
     public Penalty_1(DataStore dataStore) {

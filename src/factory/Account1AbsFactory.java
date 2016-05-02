@@ -33,7 +33,8 @@ import mdaevents.IEvents;
 import state.AccountContext;
 
 /**
- * Created by kofikyei on 4/30/16.
+ * Created by APPIAH-KUBI DESMOND on 4/30/16.
+ * Concrete Factory for creating Account 1 internals.
  */
 public class Account1AbsFactory extends AccountAbstractFactory{
 

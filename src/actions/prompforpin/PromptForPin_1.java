@@ -1,7 +1,8 @@
 package actions.prompforpin;
 
 /**
- * Created by kofikyei on 4/30/16.
+ * Created by APPIAH-KUBI DESMOND on 4/30/16.
+ * concrete class to prompt for pin.
  */
 public class PromptForPin_1 extends PromptForPin{
     @Override

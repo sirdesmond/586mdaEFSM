@@ -3,7 +3,8 @@ package state;
 import factory.AccountAbstractFactory;
 
 /**
- * Created by kofikyei on 4/30/16.
+ * Created by APPIAH-KUBI DESMOND on 4/30/16.
+ * Operations for when the system is in a locked state.
  */
 public class Locked extends State{
     AccountContext context;

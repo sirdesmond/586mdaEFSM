@@ -1,7 +1,8 @@
 package mdaevents;
 
 /**
- * Created by kofikyei on 4/30/16.
+ * Created by APPIAH-KUBI DESMOND on 4/30/16.
+ * Interface with all the events in the system
  */
 public interface IEvents {
     /**

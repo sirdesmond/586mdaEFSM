@@ -3,7 +3,8 @@ package state;
 import factory.AccountAbstractFactory;
 
 /**
- * Created by kofikyei on 4/30/16.
+ * Created by APPIAH-KUBI DESMOND on 4/30/16.
+ * Operations for when the system is in a suspended state
  */
 public class Suspended extends State{
     AccountContext context;
@@ -88,5 +89,6 @@ public class Suspended extends State{
     @Override
     public void close() {
         System.out.println("Bye!");
+        System.exit(1);
     }
 }

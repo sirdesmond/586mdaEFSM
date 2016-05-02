@@ -3,7 +3,8 @@ package actions.incorrectidmsg;
 import datastore.DataStore;
 
 /**
- * Created by kofikyei on 4/30/16.
+ * Created by APPIAH-KUBI DESMOND on 4/30/16.
+ * Concrete class for throwing IncorrectIdMsg warning.
  */
 public class IncorrectIdMsg_1 extends IncorrectIdMsg{
 
@@ -13,7 +14,7 @@ public class IncorrectIdMsg_1 extends IncorrectIdMsg{
 
     @Override
     public void incorrectIdMsg() {
-        System.out.println("Incorrect ID provided: "+ dataStore.getId());
+        System.out.println("Incorrect ID provided: "+ dataStore.getTemp_id());
         System.out.println("Enter 5 to login again");
     }
 }

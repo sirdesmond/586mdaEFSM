@@ -1,7 +1,8 @@
 package actions.displaymenu;
 
 /**
- * Created by kofikyei on 4/30/16.
+ * Created by APPIAH-KUBI DESMOND on 4/30/16.
+ * Concrete class for displaying menu for account 2
  */
 public class DisplayMenu_2 extends DisplayMenu{
     @Override
@@ -18,6 +19,7 @@ public class DisplayMenu_2 extends DisplayMenu{
         System.out.println("\t 7. suspend()");
         System.out.println("\t 8. activate()");
         System.out.println("\t 9. close()");
+        System.out.println("\t 10. Quit the demo program");
         System.out.println("*************************************************");
     }
 }

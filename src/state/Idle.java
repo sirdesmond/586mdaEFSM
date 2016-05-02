@@ -3,7 +3,8 @@ package state;
 import factory.AccountAbstractFactory;
 
 /**
- * Created by kofikyei on 4/30/16.
+ * Created by APPIAH-KUBI DESMOND on 4/30/16.
+ * Operations for when the system is in an Idle state.
  */
 public class Idle extends State{
 
@@ -32,6 +33,7 @@ public class Idle extends State{
     @Override
     public void incorrectLogin() {
         factory.getIncorrectIdMsg().incorrectIdMsg();
+        System.out.println("Please enter 0 to open account");
     }
 
     @Override

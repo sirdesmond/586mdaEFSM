@@ -1,7 +1,8 @@
 package datastore;
 
 /**
- * Created by kofikyei on 4/30/16.
+ * Created by APPIAH-KUBI DESMOND on 4/30/16.
+ * Concrete Implementation of the DB.
  */
 public class DataStore2 extends DataStore{
 

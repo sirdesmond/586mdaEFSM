@@ -7,12 +7,13 @@ import client.Account2;
 import java.util.Scanner;
 
 /**
- * Created by kofikyei on 5/1/16.
+ * Created by APPIAH-KUBI DESMOND on 5/1/16.
  */
 public class Driver {
     static Scanner sc;
     static Account account;
     static int choice;
+    static String option;
     public static void main(String[] args){
         sc = new Scanner(System.in);
         while (true){
@@ -38,6 +39,10 @@ public class Driver {
         }
     }
 
+    /**
+     * This is the actual driver for account 1
+     * @param account
+     */
     private static void drive1(Account1 account) {
         System.out.println("Select operation from menu:");
         account.getFactory().getDisplayMenu().displayMenu();
@@ -51,17 +56,17 @@ public class Driver {
                 case 0:
                     //open
                     System.out.println("Enter pin");
-                    pin = String.valueOf(sc.nextInt());
+                    pin = sc.next();
                     System.out.println("Enter id");
-                    id = String.valueOf(sc.nextInt());
+                    id = sc.next();
                     System.out.println("Enter balance");
-                    bal = String.valueOf(sc.nextInt());
+                    bal = sc.next();
                     account.open(pin,id,bal);
                     break;
                 case 1:
                     //pin
                     System.out.println("Enter pin");
-                    pin = String.valueOf(sc.nextInt());
+                    pin = sc.next();
                     account.pin(pin);
                     break;
                 case 2:
@@ -83,7 +88,7 @@ public class Driver {
                 case 5:
                     //login
                     System.out.println("Enter id");
-                    id = String.valueOf(sc.nextInt());
+                    id = sc.next();
                     account.login(id);
                     break;
                 case 6:
@@ -93,14 +98,17 @@ public class Driver {
                 case 7:
                     //lock
                     System.out.println("Enter pin");
-                    pin = String.valueOf(sc.nextInt());
+                    pin = sc.next();
                     account.lock(pin);
                     break;
                 case 8:
                     //unlock
                     System.out.println("Enter pin");
-                    pin = String.valueOf(sc.nextInt());
+                    pin = sc.next();
                     account.unlock(pin);
+                    break;
+                case 9:
+                    System.exit(1);
                     break;
                 default:
                     System.out.println("Unsupported input..try again");
@@ -109,6 +117,10 @@ public class Driver {
         }
     }
 
+    /**
+     * This is what actually drives account 2
+     * @param account
+     */
     private static void drive2(Account2 account) {
         System.out.println("Select operation from menu:");
         account.getFactory().getDisplayMenu().displayMenu();
@@ -171,9 +183,11 @@ public class Driver {
                     //activate
                     break;
                 case 9:
-                    account.close();
-                    System.exit(1);
                     //close
+                    account.close();
+                    break;
+                case 10:
+                    System.exit(1);
                     break;
                 default:
                     System.out.println("Unsupported input...try again");

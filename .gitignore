@@ -1,2 +1,10 @@
 out/
 .idea
+.classpath
+.project
+586mdaEFSM.eml
+586mdaEFSM.userlibraries
+mdaEFSM.umlcd
+mdaEFSM.umlcd.png
+src/efsm.ucls
+

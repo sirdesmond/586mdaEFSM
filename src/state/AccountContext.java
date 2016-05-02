@@ -5,7 +5,8 @@ import factory.AccountAbstractFactory;
 
 
 /**
- * Created by kofikyei on 4/30/16.
+ * Created by APPIAH-KUBI DESMOND on 4/30/16.
+ * This is the backbone of the system for state switching.
  */
 public class AccountContext {
     State ready;

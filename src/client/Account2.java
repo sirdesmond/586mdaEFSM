@@ -5,7 +5,8 @@ import factory.Account2AbsFactory;
 import mdaevents.IEvents;
 
 /**
- * Created by kofikyei on 5/1/16.
+ * Created by APPIAH-KUBI DESMOND on 5/1/16.
+ * Concrete Implementation for Account2
  */
 public class Account2 extends Account{
 
@@ -37,9 +38,13 @@ public class Account2 extends Account{
     }
 
     public void PIN(int pin){
-        if(pin == Integer.parseInt(dataStore.getPin())){
-                events.correctPinAboveMin();
-        }else events.incorrectPin(2);
+        try {
+            dataStore.setTemp_pin(pin);
+            if(pin == Integer.parseInt(dataStore.getPin())){
+                    events.correctPinAboveMin();
+            }else events.incorrectPin(2);
+        } catch (Exception e) {
+        }
     }
 
     public void DEPOSIT(int amt){
@@ -49,28 +54,58 @@ public class Account2 extends Account{
 
     public void WITHDRAW(int amt){
         dataStore.setTemp_withdrawal_amt(amt);
-        if(Float.parseFloat(dataStore.getBal()) > 0){
-            events.withdraw();
+        try {
+            if(Float.parseFloat(dataStore.getBal()) > 0){
+                events.withdraw();
+            }
+            else events.noFunds();
+        } catch (Exception e) {
         }
-        else events.noFunds();
     }
 
     public void BALANCE(){
-        events.balance();
+
+        try {
+            events.balance();
+        } catch (Exception e) {
+        }
     }
 
     public void LOGIN(int uid){
-        if(uid == Integer.parseInt(dataStore.getId())) events.login();
-        else events.incorrectLogin();
+        try {
+            dataStore.setTemp_id(uid);
+            if(uid == Integer.parseInt(dataStore.getId())) events.login();
+            else events.incorrectLogin();
+        } catch (Exception e) {
+            System.out.println("Please enter 0 to open account");
+        }
     }
 
     public void LOGOUT(){
-        events.logout();
+        try {
+            events.logout();
+        } catch (Exception e) {
+        }
     }
 
-    public void suspend(){events.suspend();}
+    public void suspend(){
+        try {
+            events.suspend();
+        } catch (Exception e) {
+        }
+    }
 
-    public void activate(){events.activate();}
+    public void activate(){
+        try {
+            events.activate();
+        } catch (Exception e) {
+        }
+    }
 
-    public void close(){events.close();}
+    public void close(){
+        try {
+            events.close();
+        } catch (Exception e) {
+        }
+    }
 }

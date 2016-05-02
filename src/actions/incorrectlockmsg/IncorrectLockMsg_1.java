@@ -3,7 +3,8 @@ package actions.incorrectlockmsg;
 import datastore.DataStore;
 
 /**
- * Created by kofikyei on 4/30/16.
+ * Created by APPIAH-KUBI DESMOND on 4/30/16.
+ * Concrete class for throwing IncorrectLockMsg warning.
  */
 public class IncorrectLockMsg_1 extends IncorrectLockMsg{
 

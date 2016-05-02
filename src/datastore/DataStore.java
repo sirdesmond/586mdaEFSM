@@ -1,7 +1,9 @@
 package datastore;
 
 /**
- * Created by kofikyei on 4/30/16.
+ * Created by APPIAH-KUBI DESMOND on 4/30/16.
+ * This is the abstract IN-MEMORY DB for the system.
+ * It stores temp and permanent data.
  */
 public abstract class DataStore {
 

@@ -1,7 +1,8 @@
 package client;
 
 /**
- * Created by kofikyei on 5/1/16.
+ * Created by APPIAH-KUBI DESMOND on 5/1/16.
+ * Abstract class for creating accounts
  */
 public abstract class Account {
 

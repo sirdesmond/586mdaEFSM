@@ -3,7 +3,8 @@ package actions.makewithdrawal;
 import datastore.DataStore;
 
 /**
- * Created by kofikyei on 4/30/16.
+ * Created by APPIAH-KUBI DESMOND on 4/30/16.
+ * Concrete class for making account 1 withdrawal.
  */
 public class MakeWithdrawal_1 extends MakeWithdrawal{
     public MakeWithdrawal_1(DataStore dataStore) {
